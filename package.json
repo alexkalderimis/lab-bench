@@ -1,0 +1,26 @@
+{
+  "name": "labbench",
+  "version": "0.0.0",
+  "description": "A tool to benchmark intermine systems",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/alexkalderimis/labbench"
+  },
+  "author": "Alex Kalderimis",
+  "license": "lgpl",
+  "devDependencies": {
+    "mocha": "~1.8.2"
+  },
+  "dependencies": {
+    "q": "~0.9.2",
+    "benchmark": "~1.0.0",
+    "coffee-script": "~1.6.1",
+    "imjs": "~2.1.5",
+    "underscore": "~1.4.4",
+    "colors": "~0.6.0-1"
+  }
+}

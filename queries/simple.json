@@ -1,0 +1,33 @@
+[
+  {
+    "name": "Small ONE OF",
+    "select": ["*", "proteins.*"],
+    "from": "Gene",
+    "where": {
+      "symbol": {"one of": ["eve", "zen", "r" ,"h", "bib"]}
+    }
+  },
+  {
+    "name": "Large ONE OF",
+    "select": ["*", "proteins.*"],
+    "from": "Gene",
+    "where": {
+      "length": {"<": 8000},
+      "chromosome.primaryIdentifier": "2L",
+      "pathways.name": [
+        "Metabolic pathways",
+        "Gene Expression",
+        "Transcription",
+        "mRNA Processing"
+      ]
+    }
+  },
+  {
+    "name": "Pathways with lookup",
+    "select": ["*", "pathways.name"],
+    "from": "Gene",
+    "where": {
+      "Gene": {"lookup": "bsk"}
+    }
+  }
+]

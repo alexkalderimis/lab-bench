@@ -1,0 +1,11 @@
+[
+  {
+    "root": "www.flymine.org/query"
+  },
+  {
+    "root": "preview.flymine.org/preview"
+  },
+  {
+    "root": "beta.flymine.org/beta"
+  }
+]
