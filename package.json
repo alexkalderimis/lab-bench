@@ -21,6 +21,7 @@
     "coffee-script": "~1.6.1",
     "imjs": "~2.1.5",
     "underscore": "~1.4.4",
-    "colors": "~0.6.0-1"
+    "colors": "~0.6.0-1",
+    "printf": "~0.1.1"
   }
 }
