@@ -29,5 +29,35 @@
     "where": {
       "Gene": {"lookup": "bsk"}
     }
+  },
+  {
+    "name": "Small gene set by location",
+    "select": [
+      "symbol",
+      "chromosomeLocation.start",
+      "chromosomeLocation.end",
+      "chromosomeLocation.locatedOn.primaryIdentifier",
+      "pathways.name"
+    ],
+    "from": "Gene",
+    "where": {
+      "chromosomeLocation.start": {">=": 10000},
+      "chromosomeLocation.end": {"<=": 20000}
+    }
+  },
+  {
+    "name": "Large gene set by location",
+    "select": [
+      "symbol",
+      "chromosomeLocation.start",
+      "chromosomeLocation.end",
+      "chromosomeLocation.locatedOn.primaryIdentifier",
+      "proteins.name"
+    ],
+    "from": "Gene",
+    "where": {
+      "chromosomeLocation.start": {">=": 10000},
+      "chromosomeLocation.end": {"<=": 500000}
+    }
   }
 ]
